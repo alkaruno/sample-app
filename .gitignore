@@ -1,0 +1,4 @@
+.idea/*
+app/cache/views
+app/config/env.php
+app/logs/*.log
