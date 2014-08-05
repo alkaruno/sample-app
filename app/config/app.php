@@ -1,7 +1,7 @@
 <?php
 
-return array(
-    'routes' => array(
-        array('^/$', 'News')
-    )
-);
+return [
+    'routes' => [
+        ['^/$', 'News']
+    ]
+];

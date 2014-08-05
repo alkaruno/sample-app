@@ -1,0 +1,28 @@
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@grid-padding: 15px;
+@grid-columns: 16;
+@grid-responsible: false;
+
+@import "normalize";
+@import "grid";
+
+html {
+    font-family: Montserrat;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    width: 970px;
+    margin: 30px auto;
+}
+
+a {
+    color: #74B73F;
+    text-decoration: none;
+    &:hover {
+        color: #ACDE84;
+        text-decoration: underline;
+    }
+}
