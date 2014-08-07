@@ -12,22 +12,20 @@
     <div class="row">
         <div class="column column-10">
             <h1>News</h1>
-            <ul>
-                {foreach $news as $item}
+            {foreach $news as $item}
+                <div>
                     <h2><a href="#">{$item.title}</a></h2>
                     <p>
                         {$item.content}
                     </p>
-                {/foreach}
-            </ul>
+                </div>
+            {/foreach}
         </div>
         <div class="column column-6">
             <h2>Last news</h2>
-            <ul>
-                {foreach NewsModel::getLast(1) as $item}
-                    <li><a href="#">{$item.title}</a></li>
-                {/foreach}
-            </ul>
+            {foreach NewsModel::getLast(1) as $item}
+                <div><a href="#">{$item.title}</a></div>
+            {/foreach}
         </div>
     </div>
 </div>
